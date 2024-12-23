@@ -123,6 +123,8 @@ p {
 }
 a {
   font-size: var(--fontWeightSemiBold);
+  text-decoration: none;
+  font-size: var(--fontSizeA);
 }
 .section__wrapper {
   max-width: 117.5rem;
