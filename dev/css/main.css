@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Light.otf") format("otf"), url("../fonts/Gilroy-Regular.eot") format("opentype"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  src: url("../fonts/Gilroy-Light.otf") format("otf"),
+    url("../fonts/Gilroy-Regular.eot") format("opentype"),
+    url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +14,8 @@
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Bold.ttf") format("truetype"), url("../fonts/Gilroy-ExtraBold.otf") format("opentype");
+  src: url("../fonts/Gilroy-Bold.ttf") format("truetype"),
+    url("../fonts/Gilroy-ExtraBold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
@@ -89,7 +92,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: var(--baseFontWeight) var(--baseFontSize) / var(--baseLineHeight) var(--baseFontFamily);
+  font: var(--baseFontWeight) var(--baseFontSize) / var(--baseLineHeight)
+    var(--baseFontFamily);
 }
 body {
   width: 100%;
@@ -663,7 +667,11 @@ footer {
   z-index: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(/* to bottom, */ var(--colorWhite), var(--colorJordyBlue) 100%, var(--colorJordyBlue) 72%);
+  background: linear-gradient(
+    /* to bottom, */ var(--colorWhite),
+    var(--colorJordyBlue) 100%,
+    var(--colorJordyBlue) 72%
+  );
   opacity: 0.2;
 }
 @media (max-width: 1320px) {
