@@ -1,0 +1,124 @@
+.clients {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: var(--colorBlueGray);
+
+  border-top-left-radius: var(--borderBigRadius);
+
+  color: var(--colorWhite);
+
+  height: 193.625rem;
+}
+.clients__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.clients__info {
+  display: flex;
+  flex-direction: row;
+
+  padding: 12rem 0 13.875rem 0;
+}
+.title__clients {
+  min-width: 27.875rem;
+  margin: 0;
+}
+.clients_p {
+  padding: 0 10rem 0 12.125rem;
+}
+
+.clients__items {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  padding-bottom: 15.625rem;
+}
+.client__item:nth-child(-n + 4) {
+  border-top: none;
+}
+
+.client__item:nth-last-child(-n + 4) {
+  border-bottom: none;
+}
+
+.client__item:nth-child(1),
+.client__item:nth-child(5) {
+  border-left: none;
+}
+
+.client__item:nth-child(4),
+.client__item:nth-child(8) {
+  border-right: none;
+}
+.client__item {
+  border: 1px solid var(--colorWhite);
+  border-top: none;
+  text-align: center;
+  padding: 5.125rem 2.5rem;
+  transition: background-color 0.3s;
+  > h4 {
+    padding: 0;
+    margin: 0;
+  }
+
+  &--more {
+    background-color: var(--colorYaleBlue), 20%;
+
+    /* opacity: 0.2; */
+    font-weight: bold;
+  }
+}
+@media (max-width: 1000px) {
+  .clients_p {
+    padding: 0 8rem;
+  }
+}
+@media (max-width: 900px) {
+  .clients__info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 10rem 0;
+  }
+  .title__clients {
+    margin-bottom: 2rem;
+  }
+  .clients_p {
+    padding: 0 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .title__clients {
+    min-width: 27.875rem;
+  }
+}
+@media (max-width: 650px) {
+  .clients__info {
+    padding: 5rem 0;
+  }
+  .clients__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    padding-bottom: 15.625rem;
+  }
+}
+@media (max-width: 600px) {
+  .clients__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    padding-bottom: 15.625rem;
+  }
+}
+@media (max-width: 500px) {
+  .clients {
+    height: 180rem;
+  }
+  .client__item {
+    padding: 4rem 2rem;
+  }
+}
